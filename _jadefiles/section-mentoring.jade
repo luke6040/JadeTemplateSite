@@ -1,22 +1,18 @@
-mixin face
-  li.face(style="background-image: url(http://fillmurray.com/80/80);")
+mixin face(face, words, name)
+  li.face(style="background-image: url(#{face});")
     .bubble
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      cite - John Jones
+      p #{words}
+      cite - #{name}
 
 section.mentoring
   .flex.flex--centre
     .col-1
       ul.faces
-        +face 
-        +face 
-        li.face.has-bubble-open(style="background-image: url(http://fillmurray.com/80/80);")
-          .bubble
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            cite - John Jones 
-        +face 
-        +face 
-        +face 
+        +face("http://fillmurray.com/80/80","orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","Name NNaammee")
+        +face("http://fillmurray.com/200/200","orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","QEWRER NNaammee")
+        +face ("http://fillmurray.com/100/100","orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","HGSF NNaammee")
+        +face("http://fillmurray.com/50/50","orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","Vsdfsdf NNaammee")
+        +face("http://fillmurray.com/500/500","orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor","FZXCCxx NNaammee")
     .col-1
       p.home-lead.outdented ...Mentoring people about things...
       a(href="").home-cta Arange a Call
