@@ -1,5 +1,5 @@
 section.articles
-  .flex.flex--centre    
+  .flex.flex--center    
     .col-50
       .article-wrap
         {% for post in site.posts limit: 12 %}
@@ -9,7 +9,7 @@ section.articles
             .date {{post.date | date: "%b %d, %Y"}}
         {% endfor %}
           
-    .col-50.flex.flex--centre.order-first
+    .col-50.flex.flex--center.order-first
       .col-1
         .desc-wrap
           p.home-lead.outdented ...writing and designing fun stuff...

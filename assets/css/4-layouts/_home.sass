@@ -11,11 +11,13 @@
   section
     padding: 50px 0
 
+
+
+  // Flex Classes
   .flex
     display: flex
-    flex-direction: rows
 
-  .flex--centre
+  .flex--center
     justify-content: center
 
   .flex--space-around
@@ -24,7 +26,9 @@
   .order-first
     order: -1
 
-//columns
+
+
+// columns
 .col-1
   width: 320px
   padding: 0 10px
@@ -42,23 +46,26 @@
 .col-50
   width: 50%
 
+
 @media (max-width: 640px)
   .home-sections .flex
     display: block
 
-    .col-1
-      max-width: 100%
+  .col-1
+    width: 100%
 
-    .col-50
-      width: auto
+  .col-50
+    width: auto
 
-    .push-right
-      margin-left: 10px
+  .push-right
+    margin-left: 0
 
-//typography
+
+
+// typography
 .home-lead
-  font-size: 36px
   line-height: 1.1
+  font-size: 36px
 
   &.outdented
     text-indent: -0.8em
