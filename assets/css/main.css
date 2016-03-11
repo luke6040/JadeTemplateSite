@@ -892,7 +892,8 @@ section.design {
     background-color: #ea4c89;
     background-image: url(/assets/img/design-bg.png);
     background-position: center;
-    padding: 50px 0; }
+    padding: 50px 0;
+    transition: background-color 150ms ease-in-out; }
     section.design .dribble.behance, section.design .behance.behance {
       background-color: #1769ff; }
       section.design .dribble.behance .home-cta, section.design .behance.behance .home-cta {
@@ -909,6 +910,9 @@ section.design {
     margin: 5px;
     transition: -webkit-transform 150ms ease-in-out;
     transition: transform 150ms ease-in-out; }
+    section.design .design-img-link:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     section.design .design-img-link img {
       width: 100%;
       display: block; }
